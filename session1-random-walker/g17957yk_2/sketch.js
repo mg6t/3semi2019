@@ -15,22 +15,22 @@ function setup() {
 }
 
 function draw() {
-  background(215,230,200); //背景
+  background(215, 230, 200); //背景
 
   // Update and display object
   for (var i = 0; i < 3; i++) {
     w[i].update();
     w[i].display(); 
   }
-  for(var i = 0;i  < 3; i++){
+  for (var i = 0; i < 3; i++) {
 	  w[3].update();
 	  w[3].display();
   }
 }
 
-function Walker(initx,inity,mag,color) { //赤のオブジェクト
+function Walker(initx, inity, mag, color) { //赤のオブジェクト
   // Start Walker in center
-  this.pos = createVector(initx,inity); //初期位置(320,120)
+  this.pos = createVector(initx, inity); //初期位置(320,120)
   // Start with 0 velocity
   this.vel = createVector(0, 0); //速度
   this.color = color;
