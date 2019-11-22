@@ -1,6 +1,6 @@
 import glob
 print("<html><body><ul>")
-for f in glob.glob("g*"):
+for f in sorted(glob.glob("g*")):
     print("<li>")
     print(f)
     print("<a href='"+f+"/index.html'>実行</a>")
